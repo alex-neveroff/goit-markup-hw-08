@@ -1,0 +1,24 @@
+.studio-adress__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.studio-adress__link {
+	font-style: normal;
+	line-height: 1.71;
+
+	transition: color 250ms $timeTransition;
+
+	&:hover,
+	&:focus {
+		color: $accentGeneral;
+
+		outline: transparent;
+	}
+
+	&--light {
+		@include colored($secondaryColor);
+	}
+	&--dark {
+		@include colored($adressColor);
+	}
+}

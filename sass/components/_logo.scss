@@ -1,0 +1,24 @@
+.logo {
+	color: $accentGeneral;
+
+	font-family: $fontLogo;
+	font-size: 26px;
+	line-height: 1.19;
+
+	&--header {
+		margin-right: 93px;
+	}
+
+	&--footer {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+}
+
+.logo__part {
+	@include colored($logoPartHeader);
+
+	&--inverse {
+		@include colored($logoPartFooter);
+	}
+}

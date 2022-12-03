@@ -1,0 +1,30 @@
+.overlay {
+	position: relative;
+	overflow: hidden;
+}
+
+.overlay__static {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 100%;
+	height: 70px;
+}
+
+.overlay__moving {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+
+	transform: translateY(100%);
+	transition: transform 250ms $timeTransition;
+
+	.portfolio__link:hover &,
+	.portfolio__link:focus & {
+		transform: translateY(0);
+	}
+}

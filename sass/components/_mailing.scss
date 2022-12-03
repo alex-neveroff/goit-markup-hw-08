@@ -1,0 +1,46 @@
+.mailing {
+	width: 570px;
+}
+.mailing__label {
+	margin-bottom: 20px;
+
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: $secondaryColor;
+}
+
+.mailing__form {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.mailing__input {
+	width: 100%;
+	height: 50px;
+	padding-left: 16px;
+
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+
+	color: $typingColor;
+	background-color: $bcgFooter;
+	border: 1px solid $borderMailing;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	transition: border-color 250ms $timeTransition, outline 250ms $timeTransition;
+
+	&::placeholder {
+		color: $adressColor;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: $accentGeneral;
+		outline: 1px solid $accentGeneral;
+	}
+}

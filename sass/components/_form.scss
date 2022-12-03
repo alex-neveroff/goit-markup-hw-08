@@ -1,0 +1,94 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.form__field {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	margin-bottom: 10px;
+}
+
+.form__label {
+	margin-bottom: 4px;
+
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+}
+
+.form__icon {
+	position: absolute;
+	left: 12px;
+	top: 29px;
+
+	fill: $typingColor;
+
+	transition: fill 250ms $timeTransition;
+
+	.form__input:focus + & {
+		fill: $accentGeneral;
+	}
+}
+
+.form__input {
+	height: 40px;
+	padding-left: 42px;
+
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+
+	color: $typingColor;
+	border: 1px solid $borderForm;
+	border-radius: 4px;
+
+	transition: border-color 250ms $timeTransition, outline 250ms $timeTransition;
+
+	&::placeholder {
+		color: $placeholderColor;
+	}
+
+	&:focus {
+		border-color: $accentGeneral;
+		outline: 1px solid $accentGeneral;
+	}
+}
+
+.form__field-textarea {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	margin-bottom: 20px;
+}
+
+.form__textarea {
+	padding-left: 16px;
+
+	font-family: inherit;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+
+	color: $typingColor;
+	border: 1px solid $borderForm;
+	border-radius: 4px;
+
+	transition: border-color 250ms $timeTransition, outline 250ms $timeTransition;
+
+	&::placeholder {
+		color: $placeholderColor;
+	}
+
+	&:focus {
+		border-color: $accentGeneral;
+		outline: 1px solid $accentGeneral;
+	}
+}

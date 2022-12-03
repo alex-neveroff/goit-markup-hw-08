@@ -1,0 +1,29 @@
+.page-hero {
+	max-width: 1600px;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	background-color: $bcgFooter;
+	background-image: linear-gradient($gradient, $gradient), url(../images/hero.jpg);
+	background-repeat: no-repeat;
+}
+
+.page-hero__title {
+	width: 696px;
+
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+
+	color: $secondaryColor;
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
+}

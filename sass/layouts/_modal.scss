@@ -1,0 +1,61 @@
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	height: 581px;
+	width: 528px;
+	padding: 40px;
+
+	background-color: $bcgGeneral;
+	border-radius: 4px;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+	transform: translate(-50%, -50%) scale(1);
+
+	transition: transform 500ms $timeTransition, box-shadow 500ms $timeTransition;
+}
+
+.modal__text {
+	margin-bottom: 12px;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+
+	color: $headerColor;
+}
+
+.modal__icon {
+	fill: currentColor;
+}
+
+.modal__button {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $bcgGeneral;
+
+	border-radius: 50%;
+	border: 1px solid $borderModalButton;
+
+	cursor: pointer;
+
+	transition: border-color 250ms $timeTransition, outline 250ms $timeTransition, color 250ms $timeTransition;
+
+	&:hover,
+	&:focus {
+		border-color: $accentGeneral;
+		color: $accentGeneral;
+
+		outline: 1px solid $accentGeneral;
+	}
+}

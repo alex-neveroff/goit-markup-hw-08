@@ -1,0 +1,34 @@
+.features {
+	display: flex;
+	gap: 30px;
+}
+.features__item {
+	flex-basis: calc((100% - 90px) / 4);
+}
+
+.features__wrap {
+	width: 270px;
+	height: 120px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-bottom: 30px;
+
+	background-color: $bcgSecondary;
+}
+
+.features__title {
+	margin-bottom: 10px;
+
+	color: $headerColor;
+
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.features__text {
+	line-height: 1.71;
+}
