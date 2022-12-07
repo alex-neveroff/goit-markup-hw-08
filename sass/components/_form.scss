@@ -81,6 +81,8 @@
 	border: 1px solid $borderForm;
 	border-radius: 4px;
 
+	resize: none;
+
 	transition: border-color 250ms $timeTransition, outline 250ms $timeTransition;
 
 	&::placeholder {

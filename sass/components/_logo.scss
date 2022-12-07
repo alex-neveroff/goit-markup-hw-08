@@ -2,8 +2,8 @@
 	color: $accentGeneral;
 
 	font-family: $fontLogo;
-	font-size: 26px;
-	line-height: 1.19;
+	font-size: 24px;
+	line-height: 1.17;
 
 	&--header {
 		margin-right: 93px;
@@ -20,5 +20,16 @@
 
 	&--inverse {
 		@include colored($logoPartFooter);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.logo {
+		font-size: 26px;
+		line-height: 1.19;
+
+		&--header {
+			margin-right: 93px;
+		}
 	}
 }

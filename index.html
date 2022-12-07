@@ -63,7 +63,6 @@
 			<!--Особливості-->
 			<section class="section section--bottom">
 				<div class="container">
-					<!-- Заголовок прихований -->
 					<h2 class="section__title hidden">Особливості</h2>
 
 					<ul class="features">
@@ -111,26 +110,47 @@
 			</section>
 
 			<!-- Чим ми займаємося-->
-			<section class="section">
+			<section class="section section--hidden">
 				<div class="container">
 					<h2 class="section__title">Чим ми займаємося</h2>
 
 					<ul class="work">
 						<li class="work__item">
 							<div class="overlay">
-								<img class="work__img" src="./images/development.jpg" alt="Створення сайтів" width="370" height="294" />
+								<img
+									class="work__img"
+									srcset="./images/development-1200-1-min.jpg 1x, ./images/development-1200-2-min.jpg 2x"
+									src="./images/development-1200-1-min.jpg"
+									alt="Створення сайтів"
+									width="370"
+									height="294"
+								/>
 								<p class="work__text overlay__static">Десктопні додатки</p>
 							</div>
 						</li>
 						<li class="work__item"
 							><div class="overlay">
-								<img class="work__img" src="./images/mobile.jpg" alt="Мобільна розробка" width="370" height="294" />
+								<img
+									class="work__img"
+									srcset="./images/mobile-1200-1-min.jpg 1x, ./images/mobile-1200-2-min.jpg 2x"
+									src="./images/mobile-1200-1-min.jpg"
+									alt="Мобільна розробка"
+									width="370"
+									height="294"
+								/>
 								<p class="work__text overlay__static">Мобільні додатки</p></div
 							>
 						</li>
 						<li class="work__item"
 							><div class="overlay">
-								<img class="work__img" src="./images/disign.jpg" alt="Графічний дизайн" width="370" height="294" />
+								<img
+									class="work__img"
+									srcset="./images/disign-1200-1-min.jpg 1x, ./images/disign-1200-1-min.jpg 2x"
+									src="./images/disign-1200-1-min.jpg"
+									alt="Графічний дизайн"
+									width="370"
+									height="294"
+								/>
 								<p class="work__text overlay__static">Дизайнерські рішення</p></div
 							>
 						</li>
@@ -145,13 +165,21 @@
 
 					<ul class="team">
 						<li class="team__item">
-							<img
-								class="team__img"
-								src="./images/igor-demiyanenko.jpg"
-								alt="Фото Ігоря Дем'яненко"
-								width="270"
-								height="260"
-							/>
+							<picture>
+								<source
+									srcset="./images/igor-demiyanenko-1200-1-min.jpg 1x, ./images/igor-demiyanenko-1200-2-min.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/igor-demiyanenko-768-1-min.jpg 1x, ./images/igor-demiyanenko-768-2-min.jpg 2x"
+									media="(max-width:1199px)"
+								/>
+								<source
+									srcset="./images/igor-demiyanenko-480-1-min.jpg 1x, ./images/igor-demiyanenko-480-2-min.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<img class="team__img" src="./images/igor-demiyanenko-1200-1-min.jpg" alt="Фото Ігоря Дем'яненко" />
+							</picture>
 							<h3 class="team__title">Ігор Дем'яненко</h3>
 							<p lang="en" class="team__text">Product Designer</p>
 							<ul class="social-net">
@@ -182,7 +210,21 @@
 							</ul>
 						</li>
 						<li class="team__item">
-							<img class="team__img" src="./images/olga-repina.jpg" alt="Фото Ольгі Рєпіної" width="270" height="260" />
+							<picture>
+								<source
+									srcset="./images/olga-repina-1200-1-min.jpg 1x, ./images/olga-repina-1200-2-min.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/olga-repina-768-1-min.jpg 1x, ./images/olga-repina-768-2-min.jpg 2x"
+									media="(max-width:1199px)"
+								/>
+								<source
+									srcset="./images/olga-repina-480-1-min.jpg 1x, ./images/olga-repina-480-2-min.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<img class="team__img" src="./images/olga-repina-1200-1-min.jpg" alt="Фото Ольги Рєпіной" />
+							</picture>
 							<h3 class="team__title">Ольга Рєпіна</h3>
 							<p lang="en" class="team__text">Frontend Developer</p>
 							<ul class="social-net">
@@ -213,13 +255,21 @@
 							</ul>
 						</li>
 						<li class="team__item">
-							<img
-								class="team__img"
-								src="./images/mykola-tarasov.jpg"
-								alt="Фото Миколи Тарасова"
-								width="270"
-								height="260"
-							/>
+							<picture>
+								<source
+									srcset="./images/mykola-tarasov-1200-1-min.jpg 1x, ./images/mykola-tarasov-1200-2-min.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/mykola-tarasov-768-1-min.jpg 1x, ./images/mykola-tarasov-768-2-min.jpg 2x"
+									media="(max-width:1199px)"
+								/>
+								<source
+									srcset="./images/mykola-tarasov-480-1-min.jpg 1x, ./images/mykola-tarasov-480-2-min.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<img class="team__img" src="./images/mykola-tarasov-1200-1-min.jpg" alt="Фото Миколи Тарасова" />
+							</picture>
 							<h3 class="team__title">Микола Тарасов</h3>
 							<p lang="en" class="team__text">Marketing</p>
 							<ul class="social-net">
@@ -250,13 +300,21 @@
 							</ul>
 						</li>
 						<li class="team__item">
-							<img
-								class="team__img"
-								src="./images/mykhailo-ermakov.jpg"
-								alt="Фото Михайло Єрмакова"
-								width="270"
-								height="260"
-							/>
+							<picture>
+								<source
+									srcset="./images/mykhailo-ermakov-1200-1-min.jpg 1x, ./images/mykhailo-ermakov-1200-2-min.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/mykhailo-ermakov-768-1-min.jpg 1x, ./images/mykhailo-ermakov-768-2-min.jpg 2x"
+									media="(max-width:1199px)"
+								/>
+								<source
+									srcset="./images/mykhailo-ermakov-480-1-min.jpg 1x, ./images/mykhailo-ermakov-480-2-min.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<img class="team__img" src="./images/mykhailo-ermakov-1200-1-min.jpg" alt="Фото Михайло Єрмакова" />
+							</picture>
 							<h3 class="team__title">Михайло Єрмаков</h3>
 							<p lang="en" class="team__text">UI Designer</p>
 							<ul class="social-net">
@@ -344,7 +402,7 @@
 		<!--Підвал-->
 		<footer class="page-footer">
 			<div class="container page-footer__container">
-				<div>
+				<div class="page-footer__item">
 					<a href="./index.html" lang="en" class="logo logo--footer"
 						>Web<span class="logo__part logo__part--inverse">Studio</span></a
 					>
@@ -370,7 +428,7 @@
 						</ul>
 					</address>
 				</div>
-				<div>
+				<div class="page-footer__item">
 					<p class="social-net__label">Приєднуйтесь</p>
 					<ul class="social-net">
 						<li class="social-net__item">
@@ -400,7 +458,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="mailing">
+				<div class="mailing page-footer__item">
 					<p class="mailing__label">Підпишіться на розсилку</p>
 					<form class="mailing__form">
 						<input type="email" name="email" aria-label="E-mail" class="mailing__input" placeholder="E-mail" />
@@ -414,6 +472,7 @@
 				</div>
 			</div>
 		</footer>
+
 		<!-- Модальне вiкно -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">

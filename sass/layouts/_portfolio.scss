@@ -4,7 +4,15 @@
 	gap: 30px;
 }
 .portfolio__item {
-	flex-basis: calc((100% - 60px) / 3);
+	flex-basis: 100%;
+
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc((100% - 60px) / 3);
+	}
 }
 
 .portfolio__link {
@@ -20,10 +28,14 @@
 }
 
 .portfolio__description {
+	display: flex;
+	align-items: center;
+
+	padding-left: 24px;
+	padding-right: 24px;
+
 	font-size: 18px;
 	line-height: 1.56;
-
-	padding: 63px 24px;
 
 	color: $secondaryColor;
 	background-color: $bcgOverlayPortfolio;

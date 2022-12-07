@@ -1,13 +1,20 @@
 .features {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 }
+
 .features__item {
-	flex-basis: calc((100% - 90px) / 4);
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 60px) / 2);
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc((100% - 90px) / 4);
+	}
 }
 
 .features__wrap {
-	width: 270px;
 	height: 120px;
 
 	display: flex;
@@ -27,6 +34,10 @@
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
 }
 
 .features__text {

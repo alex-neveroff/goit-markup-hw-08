@@ -4,8 +4,22 @@
 
 	background-color: $bcgFooter;
 }
+
 .page-footer__container {
 	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 60px;
+
+	@media screen and (min-width: 768px) {
+		align-items: baseline;
+	}
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+}
+
+.page-footer__item {
+	text-align: center;
 }
