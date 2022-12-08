@@ -1,12 +1,16 @@
 .contacts {
-	margin-left: auto;
+	display: none;
 
-	display: flex;
-	gap: 30px;
+	@media screen and (min-width: 768px) {
+		margin-left: auto;
 
-	font-weight: 500;
-	line-height: 1.43;
-	letter-spacing: 0.02em;
+		display: flex;
+		gap: 30px;
+
+		font-weight: 500;
+		line-height: 1.43;
+		letter-spacing: 0.02em;
+	}
 }
 .contacts__item {
 	flex-basis: calc((100% - 30px) / 2);

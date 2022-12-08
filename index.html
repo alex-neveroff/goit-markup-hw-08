@@ -49,6 +49,54 @@
 						>
 					</li>
 				</ul>
+				<!--Мобiльне меню-->
+				<button class="mobile-menu__button js-open-menu">
+					<svg class="mobile-menu___icon" width="24" height="16">
+						<use href="./images/sprite.svg#icon-menu"></use>
+					</svg>
+				</button>
+				<div class="mobile-menu is-hidden js-menu-container">
+					<div class="container mobile-menu__container">
+						<div class="mobile-menu__top">
+							<button class="mobile-menu__button js-close-menu">
+								<svg class="mobile-menu__icon" width="19" height="19">
+									<use href="./images/sprite.svg#icon-close"></use>
+								</svg>
+							</button>
+							<ul class="mobile-nav">
+								<li class="mobile-nav__item">
+									<a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
+								</li>
+								<li class="mobile-nav__item"><a href="./potfolio.html" class="mobile-nav__link">Портфоліо</a></li>
+								<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакти</a></li>
+							</ul>
+						</div>
+						<div class="mobile-menu__bottom">
+							<ul class="mobile-contacts">
+								<li class="mobile-contacts__item">
+									<a href="mailto:info@devstudio.com" class="mobile-contacts__link"> info@devstudio.com</a>
+								</li>
+								<li class="mobile-contacts__item">
+									<a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11</a>
+								</li>
+							</ul>
+							<ul class="mobile-social-net">
+								<li class="mobile-social-net__item">
+									<a href="#" class="mobile-social-net__link">Instagram </a>
+								</li>
+								<li class="mobile-social-net__item">
+									<a href="#" class="mobile-social-net__link">Twitter</a>
+								</li>
+								<li class="mobile-social-net__item">
+									<a href="#" class="mobile-social-net__link">Facebook</a>
+								</li>
+								<li class="mobile-social-net__item">
+									<a href="#" class="mobile-social-net__link">Linkedin</a>
+								</li>
+							</ul></div
+						>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -117,14 +165,14 @@
 					<ul class="work">
 						<li class="work__item">
 							<div class="overlay">
-								<img
-									class="work__img"
-									srcset="./images/development-1200-1-min.jpg 1x, ./images/development-1200-2-min.jpg 2x"
-									src="./images/development-1200-1-min.jpg"
-									alt="Створення сайтів"
-									width="370"
-									height="294"
-								/>
+								<picture>
+									<source
+										srcset="./images/development-1200-1-min.jpg 1x, ./images/development-1200-2-min.jpg 2x"
+										media="(min-width: 1200px)"
+									/>
+									<img class="work__img" src="./images/development-1200-1-min.jpg" alt="Створення сайтів" />
+								</picture>
+
 								<p class="work__text overlay__static">Десктопні додатки</p>
 							</div>
 						</li>
@@ -145,7 +193,7 @@
 							><div class="overlay">
 								<img
 									class="work__img"
-									srcset="./images/disign-1200-1-min.jpg 1x, ./images/disign-1200-1-min.jpg 2x"
+									srcset="./images/disign-1200-1-min.jpg 1x, ./images/disign-1200-2-min.jpg 2x"
 									src="./images/disign-1200-1-min.jpg"
 									alt="Графічний дизайн"
 									width="370"
@@ -172,13 +220,19 @@
 								/>
 								<source
 									srcset="./images/igor-demiyanenko-768-1-min.jpg 1x, ./images/igor-demiyanenko-768-2-min.jpg 2x"
-									media="(max-width:1199px)"
+									media="(min-width:768px)"
 								/>
 								<source
 									srcset="./images/igor-demiyanenko-480-1-min.jpg 1x, ./images/igor-demiyanenko-480-2-min.jpg 2x"
 									media="(max-width: 767px)"
 								/>
-								<img class="team__img" src="./images/igor-demiyanenko-1200-1-min.jpg" alt="Фото Ігоря Дем'яненко" />
+								<img
+									class="team__img"
+									src="./images/igor-demiyanenko-480-1-min"
+									alt="Фото Ігоря Дем'яненко"
+									width="450"
+									height="460"
+								/>
 							</picture>
 							<h3 class="team__title">Ігор Дем'яненко</h3>
 							<p lang="en" class="team__text">Product Designer</p>
@@ -217,13 +271,19 @@
 								/>
 								<source
 									srcset="./images/olga-repina-768-1-min.jpg 1x, ./images/olga-repina-768-2-min.jpg 2x"
-									media="(max-width:1199px)"
+									media="(min-width:768px)"
 								/>
 								<source
 									srcset="./images/olga-repina-480-1-min.jpg 1x, ./images/olga-repina-480-2-min.jpg 2x"
 									media="(max-width: 767px)"
 								/>
-								<img class="team__img" src="./images/olga-repina-1200-1-min.jpg" alt="Фото Ольги Рєпіной" />
+								<img
+									class="team__img"
+									src="./images/olga-repina-480-1-min.jpg"
+									alt="Фото Ольги Рєпіной"
+									width="450"
+									height="460"
+								/>
 							</picture>
 							<h3 class="team__title">Ольга Рєпіна</h3>
 							<p lang="en" class="team__text">Frontend Developer</p>
@@ -262,13 +322,19 @@
 								/>
 								<source
 									srcset="./images/mykola-tarasov-768-1-min.jpg 1x, ./images/mykola-tarasov-768-2-min.jpg 2x"
-									media="(max-width:1199px)"
+									media="(min-width:768px)"
 								/>
 								<source
 									srcset="./images/mykola-tarasov-480-1-min.jpg 1x, ./images/mykola-tarasov-480-2-min.jpg 2x"
 									media="(max-width: 767px)"
 								/>
-								<img class="team__img" src="./images/mykola-tarasov-1200-1-min.jpg" alt="Фото Миколи Тарасова" />
+								<img
+									class="team__img"
+									src="./images/mykola-tarasov-480-1-min.jpg"
+									alt="Фото Миколи Тарасова"
+									width="450"
+									height="460"
+								/>
 							</picture>
 							<h3 class="team__title">Микола Тарасов</h3>
 							<p lang="en" class="team__text">Marketing</p>
@@ -307,13 +373,19 @@
 								/>
 								<source
 									srcset="./images/mykhailo-ermakov-768-1-min.jpg 1x, ./images/mykhailo-ermakov-768-2-min.jpg 2x"
-									media="(max-width:1199px)"
+									media="(min-width:768px)"
 								/>
 								<source
 									srcset="./images/mykhailo-ermakov-480-1-min.jpg 1x, ./images/mykhailo-ermakov-480-2-min.jpg 2x"
 									media="(max-width: 767px)"
 								/>
-								<img class="team__img" src="./images/mykhailo-ermakov-1200-1-min.jpg" alt="Фото Михайло Єрмакова" />
+								<img
+									class="team__img"
+									src="./images/mykhailo-ermakov-480-1-min.jpg"
+									alt="Фото Михайло Єрмакова"
+									width="450"
+									height="460"
+								/>
 							</picture>
 							<h3 class="team__title">Михайло Єрмаков</h3>
 							<p lang="en" class="team__text">UI Designer</p>
@@ -478,7 +550,7 @@
 			<div class="modal">
 				<button class="modal__button" data-modal-close>
 					<svg class="modal__icon" width="18" height="18">
-						<use href="./images/sprite.svg#icon-vector"></use>
+						<use href="./images/sprite.svg#icon-close"></use>
 					</svg>
 				</button>
 				<p class="modal__text">Залиште свої дані, ми вам передзвонимо</p>
@@ -531,5 +603,6 @@
 		</div>
 
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

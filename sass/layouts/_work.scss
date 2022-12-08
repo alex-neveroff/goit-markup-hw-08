@@ -5,23 +5,29 @@
 }
 
 .work {
-	display: flex;
-	gap: 30px;
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		gap: 30px;
+	}
 }
 
 .work__item {
-	flex-basis: calc((100% - 60px) / 3);
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc((100% - 60px) / 3);
+	}
 }
 
 .work__text {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-	font-weight: 700;
-	line-height: 1.14;
-	text-transform: uppercase;
+		font-weight: 700;
+		line-height: 1.14;
+		text-transform: uppercase;
 
-	color: $secondaryColor;
-	background-color: $bcgOverlayWork;
+		color: $secondaryColor;
+		background-color: $bcgOverlayWork;
+	}
 }

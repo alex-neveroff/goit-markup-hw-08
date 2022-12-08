@@ -3,4 +3,16 @@
 }
 .page-header__wrap {
 	display: flex;
+	justify-content: space-between;
+}
+
+.page-header__button {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+}
+
+.page-header__icon {
+	fill: currentColor;
 }
