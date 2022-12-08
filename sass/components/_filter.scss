@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	max-width: 350px;
 	gap: 8px;
 
 	margin-bottom: 40px;
@@ -9,7 +10,7 @@
 	@media screen and (min-width: 768px) {
 		justify-content: center;
 		flex-wrap: nowrap;
-
+		max-width: 100%;
 		margin-bottom: 30px;
 	}
 
@@ -18,8 +19,6 @@
 	}
 }
 
-.filter__item {
-	@media screen and (min-width: 480px) {
-		flex-basis: calc((100% - 16px) / 3);
-	}
+.filter__item:nth-child(2) {
+	flex-shrink: 1;
 }
