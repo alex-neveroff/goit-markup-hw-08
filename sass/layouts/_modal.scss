@@ -5,6 +5,9 @@
 	z-index: 1;
 
 	padding: 40px;
+	width: 95vw;
+	height: 76vh;
+	overflow: auto;
 
 	background-color: $bcgGeneral;
 	border-radius: 4px;
@@ -14,7 +17,7 @@
 
 	transition: transform 500ms $timeTransition, box-shadow 500ms $timeTransition;
 	@media screen and (min-width: 480px) {
-		height: 609px;
+		height: 625px;
 		width: 450px;
 	}
 
