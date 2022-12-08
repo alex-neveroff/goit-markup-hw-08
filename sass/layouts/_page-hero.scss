@@ -10,26 +10,23 @@
 	background-position: center;
 	background-image: linear-gradient($gradient, $gradient), url(../images/hero-480-1-min.jpg);
 
-	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	@include retina {
 		background-image: linear-gradient($gradient, $gradient), url(../images/hero-480-2-min.jpg);
 	}
-	@media screen and (min-width: 480px) {
+	@include mobile {
 		background-image: linear-gradient($gradient, $gradient), url(../images/hero-768-1-min.jpg);
-		@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
-			(min-resolution: 192dpi),
-			(min-resolution: 2dppx) {
+
+		@include retina {
 			background-image: linear-gradient($gradient, $gradient), url(../images/hero-768-2-min.jpg);
 		}
 	}
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		background-image: linear-gradient($gradient, $gradient), url(../images/hero-1200-1-min.jpg);
-		@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-			(min-resolution: 192dpi),
-			(min-resolution: 2dppx) {
+		@include retina {
 			background-image: linear-gradient($gradient, $gradient), url(../images/hero-1200-2-min.jpg);
 		}
 	}
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		max-width: 1600px;
 
 		padding-top: 200px;
@@ -53,12 +50,12 @@
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	text-align: center;
-	@media screen and(min-width: 768px) {
+	@include tablet {
 		padding-left: 186px;
 		padding-right: 186px;
 	}
 
-	@media screen and(min-width: 1200px) {
+	@include desktop {
 		padding-left: 274px;
 		padding-right: 274px;
 

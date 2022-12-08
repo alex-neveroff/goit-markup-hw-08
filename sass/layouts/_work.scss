@@ -1,24 +1,24 @@
 .section--hidden {
-	@media screen and (min-width: 320px) and (max-width: 1199px) {
+	@include toDesktop {
 		display: none;
 	}
 }
 
 .work {
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		display: flex;
 		gap: 30px;
 	}
 }
 
 .work__item {
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		flex-basis: calc((100% - 60px) / 3);
 	}
 }
 
 .work__text {
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		display: flex;
 		justify-content: center;
 		align-items: center;

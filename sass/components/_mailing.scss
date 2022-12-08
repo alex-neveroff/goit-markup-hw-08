@@ -1,10 +1,10 @@
 .mailing {
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		width: 570px;
 	}
 }
 .mailing__form {
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		display: flex;
 		gap: 12px;
 	}
@@ -46,10 +46,10 @@
 		border-color: $accentGeneral;
 		outline: 1px solid $accentGeneral;
 	}
-	@media screen and (min-width: 480px) {
+	@include mobile {
 		width: 450px;
 	}
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		margin-bottom: 0px;
 	}
 }

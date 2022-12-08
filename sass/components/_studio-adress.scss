@@ -1,8 +1,8 @@
 .studio-adress__item:not(:last-child) {
-	@media screen and (max-width: 1199px) {
+	@include toDesktop {
 		margin-bottom: 8px;
 	}
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		margin-bottom: 9px;
 	}
 }

@@ -16,14 +16,14 @@
 	transform: translate(-50%, -50%) scale(1);
 
 	transition: transform 500ms $timeTransition, box-shadow 500ms $timeTransition;
-	@media screen and (min-width: 480px) {
-		height: 625px;
+	@include mobile {
 		width: 450px;
+		max-height: 625px;
 	}
 
-	@media screen and (min-width: 1200px) {
-		height: 581px;
+	@include desktop {
 		width: 528px;
+		max-height: 581px;
 	}
 }
 

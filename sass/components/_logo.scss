@@ -13,7 +13,7 @@
 		display: inline-block;
 		margin-bottom: 20px;
 	}
-	@media (max-width: 767px) {
+	@include toTablet {
 		padding-top: 16px;
 		padding-bottom: 16px;
 	}
@@ -27,7 +27,7 @@
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
 	.logo {
 		font-size: 26px;
 		line-height: 1.19;
