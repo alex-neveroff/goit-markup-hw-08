@@ -1,509 +1,456 @@
 <!DOCTYPE html>
 <html lang="uk">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Портфоліо</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-		/>
-		<link rel="stylesheet" href="./css/main.min.css" />
-	</head>
-	<body>
-		<!-- Шапка-->
-		<header class="page-header">
-			<div class="container page-header__wrap">
-				<nav class="navigation">
-					<a href="./index.html" lang="en" class="logo logo--header">Web<span class="logo__part">Studio</span></a>
-					<ul class="navigation__menu">
-						<li class="navigation__item">
-							<a href="./index.html" class="navigation__link">Студія</a>
-						</li>
-						<li class="navigation__item"
-							><a href="./potfolio.html" class="navigation__link navigation__link--current">Портфоліо</a></li
-						>
-						<li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
-					</ul>
-				</nav>
-				<ul class="contacts">
-					<li class="contacts__item">
-						<a href="mailto:info@devstudio.com" class="contacts__link">
-							<svg class="contacts__icon" width="16" height="12">
-								<use href="./images/sprite.svg#icon-header-envelope"></use>
-							</svg>
-							info@devstudio.com</a
-						>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Портфоліо</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet"
+		href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+	<link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+	<!-- Шапка-->
+	<header class="page-header">
+		<div class="container page-header__wrap">
+			<nav class="navigation">
+				<a href="./index.html" lang="en" class="logo logo--header">Web<span class="logo__part">Studio</span></a>
+				<ul class="navigation__menu">
+					<li class="navigation__item">
+						<a href="./index.html" class="navigation__link">Студія</a>
 					</li>
-					<li class="contacts__item">
-						<a href="tel:+380961111111" class="contacts__link">
-							<svg class="contacts__icon" width="10" height="16">
-								<use href="./images/sprite.svg#icon-header-smartphone"></use></svg
-							>+38 096 111 11 11</a
-						>
-					</li>
+					<li class="navigation__item"><a href="./potfolio.html"
+							class="navigation__link navigation__link--current">Портфоліо</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
 				</ul>
-				<!--Мобiльне меню-->
-				<button class="mobile-menu__button js-open-menu">
-					<svg class="mobile-menu___icon" width="24" height="16">
-						<use href="./images/sprite.svg#icon-menu"></use>
-					</svg>
-				</button>
-				<div class="mobile-menu js-menu-container">
-					<div class="container mobile-menu__container">
-						<div class="mobile-menu__top">
-							<button class="mobile-menu__button js-close-menu">
-								<svg class="mobile-menu__icon" width="19" height="19">
-									<use href="./images/sprite.svg#icon-close"></use>
-								</svg>
-							</button>
-							<ul class="mobile-nav">
-								<li class="mobile-nav__item">
-									<a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
-								</li>
-								<li class="mobile-nav__item"><a href="./potfolio.html" class="mobile-nav__link">Портфоліо</a></li>
-								<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакти</a></li>
-							</ul>
-						</div>
-						<div class="mobile-menu__bottom">
-							<ul class="mobile-contacts">
-								<li class="mobile-contacts__item">
-									<a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11</a>
-								</li>
-								<li class="mobile-contacts__item">
-									<a href="mailto:info@devstudio.com" class="mobile-contacts__link"> info@devstudio.com</a>
-								</li>
-							</ul>
-							<ul class="mobile-social-net">
-								<li class="mobile-social-net__item">
-									<a href="#" class="mobile-social-net__link">Instagram </a>
-								</li>
-								<li class="mobile-social-net__item">
-									<a href="#" class="mobile-social-net__link">Twitter</a>
-								</li>
-								<li class="mobile-social-net__item">
-									<a href="#" class="mobile-social-net__link">Facebook</a>
-								</li>
-								<li class="mobile-social-net__item">
-									<a href="#" class="mobile-social-net__link">Linkedin</a>
-								</li>
-							</ul></div
-						>
+			</nav>
+			<ul class="contacts">
+				<li class="contacts__item">
+					<a href="mailto:info@devstudio.com" class="contacts__link">
+						<svg class="contacts__icon" width="16" height="12">
+							<use href="./images/sprite.svg#icon-header-envelope"></use>
+						</svg>
+						info@devstudio.com</a>
+				</li>
+				<li class="contacts__item">
+					<a href="tel:+380961111111" class="contacts__link">
+						<svg class="contacts__icon" width="10" height="16">
+							<use href="./images/sprite.svg#icon-header-smartphone"></use>
+						</svg>+38 096 111 11 11</a>
+				</li>
+			</ul>
+			<!--Мобiльне меню-->
+			<button class="mobile-menu__button js-open-menu">
+				<svg class="mobile-menu___icon" width="24" height="16">
+					<use href="./images/sprite.svg#icon-menu"></use>
+				</svg>
+			</button>
+			<div class="mobile-menu js-menu-container">
+				<div class="container mobile-menu__container">
+					<div class="mobile-menu__top">
+						<button class="mobile-menu__button js-close-menu">
+							<svg class="mobile-menu__icon" width="19" height="19">
+								<use href="./images/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+						<ul class="mobile-nav">
+							<li class="mobile-nav__item">
+								<a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
+							</li>
+							<li class="mobile-nav__item"><a href="./potfolio.html"
+									class="mobile-nav__link">Портфоліо</a></li>
+							<li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакти</a></li>
+						</ul>
+					</div>
+					<div class="mobile-menu__bottom">
+						<ul class="mobile-contacts">
+							<li class="mobile-contacts__item">
+								<a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11</a>
+							</li>
+							<li class="mobile-contacts__item">
+								<a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+									info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="mobile-social-net">
+							<li class="mobile-social-net__item">
+								<a href="#" class="mobile-social-net__link">Instagram </a>
+							</li>
+							<li class="mobile-social-net__item">
+								<a href="#" class="mobile-social-net__link">Twitter</a>
+							</li>
+							<li class="mobile-social-net__item">
+								<a href="#" class="mobile-social-net__link">Facebook</a>
+							</li>
+							<li class="mobile-social-net__item">
+								<a href="#" class="mobile-social-net__link">Linkedin</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 
-		<main>
-			<section class="section">
-				<div class="container">
-					<!-- Заголовок прихований -->
-					<h1 class="section__title hidden">Портфоліо</h1>
+	<main>
+		<section class="section">
+			<div class="container">
+				<!-- Заголовок прихований -->
+				<h1 class="section__title hidden">Портфоліо</h1>
 
-					<!-- Фільтр портфоліо -->
-					<ul class="filter">
-						<li class="filter__item">
-							<button type="button" class="button button--filter button--current">Усі</button>
-						</li>
-						<li class="filter__item">
-							<button type="button" class="button button--filter">Веб-сайти</button>
-						</li>
-						<li class="filter__item">
-							<button type="button" class="button button--filter">Додатки</button>
-						</li>
-						<li class="filter__item"> <button type="button" class="button button--filter">Дизайн</button></li>
-						<li class="filter__item">
-							<button type="button" class="button button--filter">Маркетинг</button>
-						</li>
-					</ul>
+				<!-- Фільтр портфоліо -->
+				<ul class="filter">
+					<li class="filter__item">
+						<button type="button" class="button button--filter button--current">Усі</button>
+					</li>
+					<li class="filter__item">
+						<button type="button" class="button button--filter">Веб-сайти</button>
+					</li>
+					<li class="filter__item">
+						<button type="button" class="button button--filter">Додатки</button>
+					</li>
+					<li class="filter__item"> <button type="button" class="button button--filter">Дизайн</button></li>
+					<li class="filter__item">
+						<button type="button" class="button button--filter">Маркетинг</button>
+					</li>
+				</ul>
 
-					<!-- Список портфоліо -->
+				<!-- Список портфоліо -->
 
-					<ul class="portfolio">
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="../images/technocrack-1200-1-min.jpg 1x, ./images/technocrack-1200-2-min.jpg 2x"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="./images/technocrack-768-1-min.jpg 1x, ./images/technocrack-768-2-min.jpg 2x"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="./images/technocrack-480-1-min.jpg 1x, ./images/technocrack-480-2-min.jpg 2x"
-											media="(max-width: 767px)"
-										/>
+				<ul class="portfolio">
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source
+										srcset="./images/technocrack-1200-1-min.jpg 1x, ./images/technocrack-1200-2-min.jpg 2x"
+										media="(min-width: 1200px)" />
+									<source
+										srcset="./images/technocrack-768-1-min.jpg 1x, ./images/technocrack-768-2-min.jpg 2x"
+										media="(min-width: 768px)" />
+									<source
+										srcset="./images/technocrack-480-1-min.jpg 1x, ./images/technocrack-480-2-min.jpg 2x"
+										media="(max-width: 767px)" />
 
-										<img class="portfolio__img" src="./images/growing-buisness-1200-1-min.jpg" alt="Технокряк" />
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
-										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 class="portfolio__title">Технокряк</h2>
-									<p class="portfolio__text">Веб-сайт</p>
-								</div>
-							</a>
-						</li>
+									<img class="portfolio__img" src="./images/growing-buisness-1200-1-min.jpg"
+										alt="Технокряк" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+									це дозволить
+									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 class="portfolio__title">Технокряк</h2>
+								<p class="portfolio__text">Веб-сайт</p>
+							</div>
+						</a>
+					</li>
 
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source srcset="
 												./images/new-orlean-golden-star-1200-1-min.jpg 1x,
 												./images/new-orlean-golden-star-1200-2-min.jpg 2x
-											"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
+											" media="(min-width: 1200px)" />
+									<source srcset="
 												./images/new-orlean-golden-star-768-1-min.jpg 1x,
 												./images/new-orlean-golden-star-768-2-min.jpg 2x
-											"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
+											" media="(min-width: 768px)" />
+									<source srcset="
 												./images/new-orlean-golden-star-480-1-min.jpg 1x,
 												./images/new-orlean-golden-star-480-2-min.jpg 2x
-											"
-											media="(max-width: 767px)"
-										/>
-										<img
-											class="portfolio__img"
-											src="./images/new-orlean-golden-star-1200-1-min.jpg"
-											alt="Постер New Orlean vs Golden Star"
-										/>
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia eveniet sapiente sunt
-										architecto tempora perspiciatis esse reiciendis!
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 class="portfolio__title"> Постер <span lang="en">Orlean vs Golden Star</span> </h2>
-									<p class="portfolio__text">Дизайн</p>
-								</div></a
-							>
-						</li>
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="./images/seafood-1200-1-min.jpg 1x, ./images/seafood-1200-2-min.jpg 2x"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="./images/seafood-768-1-min.jpg 1x, ./images/seafood-768-2-min.jpg 2x"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="./images/seafood-480-1-min.jpg 1x, ./images/seafood-480-2-min.jpg 2x"
-											media="(max-width: 767px)"
-										/>
-										<img class="portfolio__img" src="./images/seafood-1200-1-min.jpg" alt="Ресторан Seafood" />
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia eveniet sapiente sunt
-										architecto tempora perspiciatis esse reiciendis!
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 class="portfolio__title">Ресторан <span lang="en">Seafood</span></h2>
-									<p class="portfolio__text">Дизайн</p>
-								</div></a
-							>
-						</li>
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="./images/prime-1200-1-min.jpg 1x, ./images/prime-1200-2-min.jpg 2x"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="./images/prime-768-1-min.jpg 1x, ./images/prime-768-2-min.jpg 2x"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="./images/prime-480-1-min.jpg 1x, ./images/prime-480-2-min.jpg 2x"
-											media="(max-width: 767px)"
-										/>
-										<img class="portfolio__img" src="./images/prime-1200-1-min.jpg" alt="Проєкт Prime" />
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia eveniet sapiente sunt
-										architecto tempora perspiciatis esse reiciendis!
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 class="portfolio__title">Проєкт <span lang="en">Prime</span></h2>
-									<p class="portfolio__text">Маркетинг</p>
-								</div></a
-							>
-						</li>
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="./images/boxes-1200-1-min.jpg 1x, ./images/boxes-1200-2-min.jpg 2x"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="./images/boxes-768-1-min.jpg 1x, ./images/boxes-768-2-min.jpg 2x"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="./images/boxes-480-1-min.jpg 1x, ./images/boxes-480-2-min.jpg 2x"
-											media="(max-width: 767px)"
-										/>
-										<img class="portfolio__img" src="./images/boxes-1200-1-min.jpg" alt="Проєкт Boxes" />
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia eveniet sapiente sunt
-										architecto tempora perspiciatis esse reiciendis!
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 class="portfolio__title">Проєкт <span lang="en">Boxes</span></h2>
-									<p class="portfolio__text">Додаток</p>
-								</div></a
-							>
-						</li>
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="
+											" media="(max-width: 767px)" />
+									<img class="portfolio__img" src="./images/new-orlean-golden-star-1200-1-min.jpg"
+										alt="Постер New Orlean vs Golden Star" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia
+									eveniet sapiente sunt
+									architecto tempora perspiciatis esse reiciendis!
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 class="portfolio__title"> Постер <span lang="en">Orlean vs Golden Star</span> </h2>
+								<p class="portfolio__text">Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source
+										srcset="./images/seafood-1200-1-min.jpg 1x, ./images/seafood-1200-2-min.jpg 2x"
+										media="(min-width: 1200px)" />
+									<source
+										srcset="./images/seafood-768-1-min.jpg 1x, ./images/seafood-768-2-min.jpg 2x"
+										media="(min-width: 768px)" />
+									<source
+										srcset="./images/seafood-480-1-min.jpg 1x, ./images/seafood-480-2-min.jpg 2x"
+										media="(max-width: 767px)" />
+									<img class="portfolio__img" src="./images/seafood-1200-1-min.jpg"
+										alt="Ресторан Seafood" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia
+									eveniet sapiente sunt
+									architecto tempora perspiciatis esse reiciendis!
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 class="portfolio__title">Ресторан <span lang="en">Seafood</span></h2>
+								<p class="portfolio__text">Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source srcset="./images/prime-1200-1-min.jpg 1x, ./images/prime-1200-2-min.jpg 2x"
+										media="(min-width: 1200px)" />
+									<source srcset="./images/prime-768-1-min.jpg 1x, ./images/prime-768-2-min.jpg 2x"
+										media="(min-width: 768px)" />
+									<source srcset="./images/prime-480-1-min.jpg 1x, ./images/prime-480-2-min.jpg 2x"
+										media="(max-width: 767px)" />
+									<img class="portfolio__img" src="./images/prime-1200-1-min.jpg"
+										alt="Проєкт Prime" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia
+									eveniet sapiente sunt
+									architecto tempora perspiciatis esse reiciendis!
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 class="portfolio__title">Проєкт <span lang="en">Prime</span></h2>
+								<p class="portfolio__text">Маркетинг</p>
+							</div>
+						</a>
+					</li>
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source srcset="./images/boxes-1200-1-min.jpg 1x, ./images/boxes-1200-2-min.jpg 2x"
+										media="(min-width: 1200px)" />
+									<source srcset="./images/boxes-768-1-min.jpg 1x, ./images/boxes-768-2-min.jpg 2x"
+										media="(min-width: 768px)" />
+									<source srcset="./images/boxes-480-1-min.jpg 1x, ./images/boxes-480-2-min.jpg 2x"
+										media="(max-width: 767px)" />
+									<img class="portfolio__img" src="./images/boxes-1200-1-min.jpg"
+										alt="Проєкт Boxes" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia
+									eveniet sapiente sunt
+									architecto tempora perspiciatis esse reiciendis!
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 class="portfolio__title">Проєкт <span lang="en">Boxes</span></h2>
+								<p class="portfolio__text">Додаток</p>
+							</div>
+						</a>
+					</li>
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source srcset="
 												./images/inspiration-has-no-border-1200-1-min.jpg 1x,
 												./images/inspiration-has-no-border-1200-2-min.jpg 2x
-											"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
+											" media="(min-width: 1200px)" />
+									<source srcset="
 												./images/inspiration-has-no-border-768-1-min.jpg 1x,
 												./images/inspiration-has-no-border-768-2-min.jpg 2x
-											"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
+											" media="(min-width: 768px)" />
+									<source srcset="
 												./images/inspiration-has-no-border-480-1-min.jpg 1x,
 												./images/inspiration-has-no-border-480-2-min.jpg 2x
-											"
-											media="(max-width: 767px)"
-										/>
-										<img
-											class="portfolio__img"
-											src="./images/inspiration-has-no-border-1200-1-min.jpg"
-											alt="Inspiration has no Borders"
-										/>
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia eveniet sapiente sunt
-										architecto tempora perspiciatis esse reiciendis!
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 lang="en" class="portfolio__title">Inspiration has no Borders</h2>
-									<p class="portfolio__text">Веб-сайт</p>
-								</div></a
-							>
-						</li>
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="./images/limited-edition-1200-1-min.jpg 1x, ./images/limited-edition-1200-2-min.jpg 2x"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="./images/limited-edition-768-1-min.jpg 1x, ./images/limited-edition-768-2-min.jpg 2x"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="./images/limited-edition-480-1-min.jpg 1x, ./images/limited-edition-480-2-min.jpg 2x"
-											media="(max-width: 767px)"
-										/>
-										<img
-											class="portfolio__img"
-											src="./images/limited-edition-1200-1-min.jpg"
-											alt="Видання Limited Edition"
-										/>
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia eveniet sapiente sunt
-										architecto tempora perspiciatis esse reiciendis!
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 class="portfolio__title"> Видання <span lang="en">Limited Edition</span> </h2>
-									<p class="portfolio__text">Дизайн</p>
-								</div></a
-							>
-						</li>
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="./images/lab-1200-1-min.jpg 1x, ./images/lab-1200-2-min.jpg 2x"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="./images/lab-768-1-min.jpg 1x, ./images/lab-768-2-min.jpg 2x"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="./images/lab-480-1-min.jpg 1x, ./images/lab-480-2-min.jpg 2x"
-											media="(max-width: 767px)"
-										/>
-										<img class="portfolio__img" src="./images/lab-1200-1-min.jpg" alt="Проєкт LAB" />
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia eveniet sapiente sunt
-										architecto tempora perspiciatis esse reiciendis!
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 class="portfolio__title">Проєкт <span lang="en">LAB</span></h2>
-									<p class="portfolio__text">Маркетинг</p>
-								</div></a
-							>
-						</li>
-						<li class="portfolio__item">
-							<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
-								<div class="overlay">
-									<picture>
-										<source
-											srcset="./images/growing-buisness-1200-1-min.jpg 1x, ./images/growing-buisness-1200-2-min.jpg 2x"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="./images/growing-buisness-768-1-min.jpg 1x, ./images/growing-buisness-768-2-min.jpg 2x"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="./images/growing-buisness-480-1-min.jpg 1x, ./images/growing-buisness-480-2-min.jpg 2x"
-											media="(max-width: 767px)"
-										/>
-										<img class="portfolio__img" src="./images/growing-buisness-1200-1-min.jpg" alt="Growing Business" />
-									</picture>
-									<p class="portfolio__description overlay__moving">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia eveniet sapiente sunt
-										architecto tempora perspiciatis esse reiciendis!
-									</p>
-								</div>
-								<div class="portfolio__meta">
-									<h2 lang="en" class="portfolio__title">Growing Business</h2>
-									<p class="portfolio__text">Додаток</p>
-								</div></a
-							>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-
-		<!--Підвал-->
-		<footer class="page-footer">
-			<div class="container page-footer__container">
-				<div>
-					<a href="./index.html" lang="en" class="logo logo--footer"
-						>Web<span class="logo__part logo__part--inverse">Studio</span></a
-					>
-					<address>
-						<ul class="studio-adress">
-							<li class="studio-adress__item">
-								<a
-									href="https://goo.gl/maps/uNxrcM7Ruqw2PwGc9"
-									target="_blank"
-									rel="noopener noreferrer"
-									class="studio-adress__link studio-adress__link--light"
-									>м. Київ, пр-т Лесі Українки, 26</a
-								>
-							</li>
-							<li class="studio-adress__item">
-								<a href="mailto:info@devstudio.com" class="studio-adress__link studio-adress__link--dark"
-									>info@devstudio.com</a
-								>
-							</li>
-							<li class="studio-adress__item">
-								<a href="tel:+380961111111" class="studio-adress__link studio-adress__link--dark">+38 096 111 11 11</a>
-							</li>
-						</ul>
-					</address>
-				</div>
-				<div>
-					<p class="social-net__label">Приєднуйтесь</p>
-					<ul class="social-net">
-						<li class="social-net__item">
-							<a href="#" class="social-net__link social-net__link--light">
-								<svg class="social-net__icon" width="20" height="20">
-									<use href="./images/sprite.svg#icon-social-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-net__item">
-							<a href="#" class="social-net__link social-net__link--light">
-								<svg class="social-net__icon" width="20" height="20">
-									<use href="./images/sprite.svg#icon-social-twitter"></use></svg
-							></a>
-						</li>
-						<li class="social-net__item">
-							<a href="#" class="social-net__link social-net__link--light">
-								<svg class="social-net__icon" width="20" height="20">
-									<use href="./images/sprite.svg#icon-social-facebook"></use></svg
-							></a>
-						</li>
-						<li class="social-net__item">
-							<a href="#" class="social-net__link social-net__link--light">
-								<svg class="social-net__icon" width="20" height="20">
-									<use href="./images/sprite.svg#icon-social-linkedin"></use></svg
-							></a>
-						</li>
-					</ul>
-				</div>
-				<div class="mailing">
-					<p class="mailing__label">Підпишіться на розсилку</p>
-					<form class="mailing__form">
-						<input type="email" name="email" aria-label="E-mail" class="mailing__input" placeholder="E-mail" />
-						<button type="submit" class="button"
-							>Підписатися
-							<svg class="button__icon" width="24" height="24">
-								<use href="./images/sprite.svg#icon-send"></use>
-							</svg>
-						</button>
-					</form>
-				</div>
+											" media="(max-width: 767px)" />
+									<img class="portfolio__img" src="./images/inspiration-has-no-border-1200-1-min.jpg"
+										alt="Inspiration has no Borders" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia
+									eveniet sapiente sunt
+									architecto tempora perspiciatis esse reiciendis!
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 lang="en" class="portfolio__title">Inspiration has no Borders</h2>
+								<p class="portfolio__text">Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source
+										srcset="./images/limited-edition-1200-1-min.jpg 1x, ./images/limited-edition-1200-2-min.jpg 2x"
+										media="(min-width: 1200px)" />
+									<source
+										srcset="./images/limited-edition-768-1-min.jpg 1x, ./images/limited-edition-768-2-min.jpg 2x"
+										media="(min-width: 768px)" />
+									<source
+										srcset="./images/limited-edition-480-1-min.jpg 1x, ./images/limited-edition-480-2-min.jpg 2x"
+										media="(max-width: 767px)" />
+									<img class="portfolio__img" src="./images/limited-edition-1200-1-min.jpg"
+										alt="Видання Limited Edition" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia
+									eveniet sapiente sunt
+									architecto tempora perspiciatis esse reiciendis!
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 class="portfolio__title"> Видання <span lang="en">Limited Edition</span> </h2>
+								<p class="portfolio__text">Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source srcset="./images/lab-1200-1-min.jpg 1x, ./images/lab-1200-2-min.jpg 2x"
+										media="(min-width: 1200px)" />
+									<source srcset="./images/lab-768-1-min.jpg 1x, ./images/lab-768-2-min.jpg 2x"
+										media="(min-width: 768px)" />
+									<source srcset="./images/lab-480-1-min.jpg 1x, ./images/lab-480-2-min.jpg 2x"
+										media="(max-width: 767px)" />
+									<img class="portfolio__img" src="./images/lab-1200-1-min.jpg" alt="Проєкт LAB" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia
+									eveniet sapiente sunt
+									architecto tempora perspiciatis esse reiciendis!
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 class="portfolio__title">Проєкт <span lang="en">LAB</span></h2>
+								<p class="portfolio__text">Маркетинг</p>
+							</div>
+						</a>
+					</li>
+					<li class="portfolio__item">
+						<a href="" target="_blank" rel="noopener noreferrer" class="portfolio__link">
+							<div class="overlay">
+								<picture>
+									<source
+										srcset="./images/growing-buisness-1200-1-min.jpg 1x, ./images/growing-buisness-1200-2-min.jpg 2x"
+										media="(min-width: 1200px)" />
+									<source
+										srcset="./images/growing-buisness-768-1-min.jpg 1x, ./images/growing-buisness-768-2-min.jpg 2x"
+										media="(min-width: 768px)" />
+									<source
+										srcset="./images/growing-buisness-480-1-min.jpg 1x, ./images/growing-buisness-480-2-min.jpg 2x"
+										media="(max-width: 767px)" />
+									<img class="portfolio__img" src="./images/growing-buisness-1200-1-min.jpg"
+										alt="Growing Business" />
+								</picture>
+								<p class="portfolio__description overlay__moving">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos eius quia
+									eveniet sapiente sunt
+									architecto tempora perspiciatis esse reiciendis!
+								</p>
+							</div>
+							<div class="portfolio__meta">
+								<h2 lang="en" class="portfolio__title">Growing Business</h2>
+								<p class="portfolio__text">Додаток</p>
+							</div>
+						</a>
+					</li>
+				</ul>
 			</div>
-		</footer>
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-			crossorigin="anonymous"
-		></script>
-		<script src="./js/mobile-menu.js"></script>
-	</body>
+		</section>
+	</main>
+
+	<!--Підвал-->
+	<footer class="page-footer">
+		<div class="container page-footer__container">
+			<div>
+				<a href="./index.html" lang="en" class="logo logo--footer">Web<span
+						class="logo__part logo__part--inverse">Studio</span></a>
+				<address>
+					<ul class="studio-adress">
+						<li class="studio-adress__item">
+							<a href="https://goo.gl/maps/uNxrcM7Ruqw2PwGc9" target="_blank" rel="noopener noreferrer"
+								class="studio-adress__link studio-adress__link--light">м. Київ, пр-т Лесі Українки,
+								26</a>
+						</li>
+						<li class="studio-adress__item">
+							<a href="mailto:info@devstudio.com"
+								class="studio-adress__link studio-adress__link--dark">info@devstudio.com</a>
+						</li>
+						<li class="studio-adress__item">
+							<a href="tel:+380961111111" class="studio-adress__link studio-adress__link--dark">+38 096
+								111 11 11</a>
+						</li>
+					</ul>
+				</address>
+			</div>
+			<div>
+				<p class="social-net__label">Приєднуйтесь</p>
+				<ul class="social-net">
+					<li class="social-net__item">
+						<a href="#" class="social-net__link social-net__link--light">
+							<svg class="social-net__icon" width="20" height="20">
+								<use href="./images/sprite.svg#icon-social-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-net__item">
+						<a href="#" class="social-net__link social-net__link--light">
+							<svg class="social-net__icon" width="20" height="20">
+								<use href="./images/sprite.svg#icon-social-twitter"></use>
+							</svg></a>
+					</li>
+					<li class="social-net__item">
+						<a href="#" class="social-net__link social-net__link--light">
+							<svg class="social-net__icon" width="20" height="20">
+								<use href="./images/sprite.svg#icon-social-facebook"></use>
+							</svg></a>
+					</li>
+					<li class="social-net__item">
+						<a href="#" class="social-net__link social-net__link--light">
+							<svg class="social-net__icon" width="20" height="20">
+								<use href="./images/sprite.svg#icon-social-linkedin"></use>
+							</svg></a>
+					</li>
+				</ul>
+			</div>
+			<div class="mailing">
+				<p class="mailing__label">Підпишіться на розсилку</p>
+				<form class="mailing__form">
+					<input type="email" name="email" aria-label="E-mail" class="mailing__input" placeholder="E-mail" />
+					<button type="submit" class="button">Підписатися
+						<svg class="button__icon" width="24" height="24">
+							<use href="./images/sprite.svg#icon-send"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+		integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+		crossorigin="anonymous"></script>
+	<script src="./js/mobile-menu.js"></script>
+</body>
+
 </html>
